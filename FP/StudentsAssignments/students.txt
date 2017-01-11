@@ -1,0 +1,13 @@
+12;BogdanAcsinia;4;
+6;NechitaSebastian;2;
+7;BanciuRaul;3;
+8;NiculaAndrei;3;
+2;BobDiana;1;
+20;coco;4;
+5;FratilaMatei;2;
+3;AcatrineiAndreea;1;
+9;ArteneDragos;3;
+1;DelibasStefan;1;
+4;MirceaSorin;2;
+10;RusanTudor:;3;
+11;MariusImbrisca;4;

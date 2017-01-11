@@ -1,0 +1,16 @@
+type of repository=InMemory=
+
+available types:
+	InMemory
+	TextFile
+	PickleFile
+	
+If you want to change the configuration file please 
+make sure you have chosen one type available in the list above.
+Note:It's case sensitive so be careful how you spell it.
+
+
+
+
+stefa 12
+andrei blaj 4
