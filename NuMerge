@@ -1,0 +1,36 @@
+'''
+Created on 13 Jan 2017
+
+@author: User
+'''
+'''
+Created on 13 Jan 2017
+
+@author: User
+'''
+
+def sum(arr):
+    suma = 0
+    for e in range (0,len(arr)-1):
+        suma+=arr[e]
+    return suma
+    
+def backtracking(step,i,arr,n,coins,s):
+    if len(arr) == n:
+        if sum(arr) == s:
+            for i in range(0,len(arr)):#
+                if i != len(arr):
+                    print(str(arr[i])+'+',end='')
+                else:
+                    print(str(arr[i]))
+    return
+    arr[step]=coins[i]
+    backtracking(step+1,i,arr,n,coins,s)
+    backtracking(step,i+1,arr,n,coins,s)
+        
+n=7
+coins=[1,5,10,50]
+arr= [0]*n
+s=137
+
+backtracking(1, 1, arr , n, coins, s)
