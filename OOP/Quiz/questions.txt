@@ -1,0 +1,14 @@
+1;cat face 1+1?;2;1
+2;cat face 1+2?;3;1
+3;cat face 5*6?;30;2
+4;Cine e sefu?;Stefan;4
+6;PSD vs ...?;PNL;2
+7;castraveti si ...?;porodici;3
+8;What is the name of Stefan's favourite singer?;Ed Sheeran;5
+9;Why does Passenger sing sad songs?;Only he knows why;10
+10;Why do girls wear makeup?;Because they can;100
+11;What's worse than Lupea?;Pintea;20
+12;Oare de ce mi mie pofta?;Budincuta;500
+13;And le't pretend we're dancing in the streets, in.....;Barcelona;50
+14;Ce mi-a promis Stefi ca face pentru mine inainte de a pleca la Brasov?;Abonament Digi;49
+15;Care sunt florile Iuliei preferate?;oricare;80
