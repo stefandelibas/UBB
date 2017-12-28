@@ -1,0 +1,4 @@
+Insert(E,[],[E]).
+insert(E,L,[E|L]).
+insert(E,[H|T],[H|Res]):-
+     insert(E,T,Res).

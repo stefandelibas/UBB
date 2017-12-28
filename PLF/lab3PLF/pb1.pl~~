@@ -1,0 +1,18 @@
+succesor([H],[HR]):-
+    H=\=9;
+    HR is H+1.
+succesor([H],[HR]):-
+    H=:=9;
+    HR is 0.
+succesor([H|T],[H|R]):-
+    predecesor(T,[HR|[Last|R]]),
+    Last=:=0,
+    HR=\=9,
+    HR is HR+1.
+succesor([H|T],[H|R]):-
+    predecesor(T,[HR|[Last|R]]),
+    Last=:=0,
+    HR=:=9
+    HR is 0.
+
+

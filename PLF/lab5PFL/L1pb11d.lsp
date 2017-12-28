@@ -1,0 +1,11 @@
+(defun prod(lst p)
+	(cond 
+		((equal (length lst) 0) p)
+		((listp (car lst)) (prod (cdr lst) (* p (prod (car lst) 1))))
+		((and (numberp (car lst)) (equal (mod (car lst) 2) 0)) (prod (cdr lst) (* p (car lst))))
+		(t (prod (cdr lst) p))
+	)
+)
+(defun product(lst)
+	(prod lst 1)
+)

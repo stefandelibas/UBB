@@ -1,0 +1,44 @@
+increment([], 1,[]).
+increment([H|T], CarryFlag, Res):-
+    increment(T, CF, Res2),
+    CF =:= 0,
+    Res = [H | Res2],
+    CarryFlag is 0.
+
+increment([H|T], CarryFlag, Res):-
+    increment(T,CF,Res2),
+    CF =:=1,
+    H=:=9,
+    Res = [0|Res2],
+    CarryFlag is 1.
+
+increment([H|T], CarryFlag, Res):-
+    increment(T,CF,Res2),
+    CF =:=1,
+    H < 9,
+    HR is H+1,
+    Res = [ HR | Res2 ],
+    CarryFlag is 0.
+
+incrementList(L,Res):-
+    increment(L,CF,R),
+    CF=:=1,
+    Res = [1|R].
+
+incrementList(L,Res):-
+    increment(L,CF,R),
+    CF=:=0,
+    Res = R.
+
+incrementAll([],[]).
+incrementAll([H|T],[Res|R]):-
+    is_list(H),
+    incrementList(H,Res),
+    incrementAll(T,R).
+
+
+incrementAll([H|T],[H|R]):-
+    not(is_list(H)),
+    incrementAll(T,R).
+
+
