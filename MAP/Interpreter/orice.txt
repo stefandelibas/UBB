@@ -1,0 +1,560 @@
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f ((model.OpenRFile@15db9742;model.ReadFile@6d06d69c);(print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))))
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) (model.OpenRFile@15db9742;model.ReadFile@6d06d69c)
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c model.OpenRFile@15db9742
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)))
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)) print(var_f)
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (model.ReadFile@7852e922;print(var_f))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f) model.ReadFile@7852e922
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f)
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f ((model.OpenRFile@15db9742;model.ReadFile@6d06d69c);(print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))))
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) (model.OpenRFile@15db9742;model.ReadFile@6d06d69c)
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c model.OpenRFile@15db9742
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)))
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)) print(var_f)
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (model.ReadFile@7852e922;print(var_f))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f) model.ReadFile@7852e922
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f)
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f ((model.OpenRFile@15db9742;model.ReadFile@6d06d69c);(print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))))
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) (model.OpenRFile@15db9742;model.ReadFile@6d06d69c)
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c model.OpenRFile@15db9742
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))) model.ReadFile@6d06d69c
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (print(var_f);IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)))
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0)) print(var_f)
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f IF(var_f) THEN((model.ReadFile@7852e922;print(var_f)))ELSE(print(0))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f (model.ReadFile@7852e922;print(var_f))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f) model.ReadFile@7852e922
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f print(var_f)
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@4e25154f
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 ((model.OpenRFile@6d06d69c;model.ReadFile@7852e922);(print(var_f);IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0))))
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 (print(var_f);IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0))) (model.OpenRFile@6d06d69c;model.ReadFile@7852e922)
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 (print(var_f);IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0))) model.ReadFile@7852e922 model.OpenRFile@6d06d69c
+SymTable:
+ 
+Out:
+
+FileTable:
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 (print(var_f);IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0))) model.ReadFile@7852e922
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 (print(var_f);IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0)))
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0)) print(var_f)
+SymTable:
+ var_f=2
+Out:
+
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 IF(var_f) THEN((model.ReadFile@4e25154f;print(var_f)))ELSE(print(0))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 (model.ReadFile@4e25154f;print(var_f))
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 print(var_f) model.ReadFile@4e25154f
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742 print(var_f)
+SymTable:
+ var_f=2
+Out:
+ 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+ model.CloseRFile@15db9742
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+2=(test.in,java.io.BufferedReader@70dea4e)
+
+------------------------------------
+
+------------------------------------
+ExeStack:
+
+SymTable:
+ var_f=2
+Out:
+ 2 2
+FileTable:
+
+------------------------------------
