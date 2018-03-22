@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Practice</title>
+  <meta charset="utf-8">
+     <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+
+  <script type="text/javascript">
+    function In() {
+    document.getElementById(arguments[0]).style.width = "auto";
+    document.getElementById(arguments[0]).style.height = "auto";
+
+  }
+
+  function Out() {
+    document.getElementById(arguments[0]).style.width = "auto";
+    document.getElementById(arguments[0]).style.height = "25%";
+  }
+  </script>
+</head>
+<body>
+
+<div class="flex-container-page">
+  <nav>
+    Welcome to Computer Science DASHBOARD
+  </nav>
+  
+  
+    <div class="flex-container">    
+      
+      <div onmouseover="In('first')" onmouseout="Out('first')" id="first"> 
+          <!-- <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+          <div id="demo" class="collapse"> -->
+          <h1>WEB</h1>
+          <section>Teacher: Forest</section>
+          <a href="http://www.cs.ubbcluj.ro/~forest/wp/" target="_blank"><article>website</article></a>
+          <img src="course.png"><span>Thursday: 10AM-12PM</span><br>
+          <img src="lab.png"><span>Monday : 6PM-8PM</span>
+          <p>
+      </div>
+      
+      <div onmouseover="In('second')" onmouseout="Out('second')" id="second"> 
+        <h1>SGDB</h1>
+        <section>Teacher: Suciu Dan</section>
+          <article><a href="https://danmirceasuciu.wixsite.com/home" target="_blank">website</a></article>
+          <img src="course.png"><span>Thursady: 8AM-10AM</spna><br>
+          <img src="lab.png"><span>Tuesday: 10AM-12PM(W2)</span><br>
+          <img src="seminar.png"><span>Tuesday: 2PM-4PM(W1)</span><br>
+      </div>
+
+      <div onmouseover="In('third')" onmouseout="Out('third')" id="third"> 
+        <h1>MPP</h1>
+        <section>Teacher: Gaceanu</section>
+          <a href="https://groups.google.com/forum/#!forum/sdi_2018" target="_blank"><article>website</article></a>
+          <img src="course.png"><span>Monday: 8AM-10AM</span><br>
+          <img src="lab.png"><span>Firday: 4PM-6PM</span><br>
+      </div>
+
+      <div onmouseover="In('fourth')" onmouseout="Out('fourth')" id="fourth"> 
+        <h1>AI</h1>
+          <section>Teacher: Mihoc</section>
+          <article><a href="http://www.cs.ubbcluj.ro/~mihoct/" target="_blank">website</a></article>
+          <img src="course.png"><span>Tuesday: 6PM-8PM</span><br>
+          <img src="lab.png"><span>Monday: 2PM-4PM(W2)</span><br>
+          <img src="seminar.png"><span>Tuesday: 4PM-6PM(W1)</span><br>
+      </div>
+
+      <div onmouseover="In('fifth')" onmouseout="Out('fifth')" id="fifth"> 
+          <h1>ISS</h1>
+           <section>Teacher: Chiorean Dan</section>
+          <a href="http://www.cs.ubbcluj.ro/~lorinczb/SE.html" target="_blank"><article>website</article></a>
+          <img src="course.png"><span>Wednesday: 10AM-12PM</span><br>
+          <img src="lab.png"><span>Firday: 8AM-10AM(W2)</span><br>
+          <img src="seminar.png"><span>Wednesday: 4PM-6PM(W1)</span><br>
+      </div>
+
+
+    </div>
+  
+  <footer class="container-fluid text-center">
+    <p>By Stefan Delibas</p>
+  </footer>
+</div>
+
+</body>
+</html>

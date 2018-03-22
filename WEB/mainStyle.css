@@ -1,0 +1,148 @@
+html, body{
+     height: 100%;
+     margin: 0;
+}
+nav {
+  height: 10%;
+  width: 100%;
+  color: #3e74c9;
+  background-color: #1d3a68;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 50px;
+  margin-left: 20px;
+  margin: 20px 10px 20px 20px;
+  flex-shrink: 0;
+
+}
+footer {
+  height: 10%;
+  width: 100%;
+  color: #3e74c9;
+  background-color: #1d3a68;
+  margin: 30px;
+  padding: 20px;
+  text-align: right;
+  line-height: 50px;
+  font-size: 10px;
+  margin-left: 20px;
+  margin: 20px 10px 20px 20px;
+  flex-shrink: 0;
+
+}
+.col-sm-2{
+  background-color: cyan;
+  
+}
+.col-sm-8{
+  background-color: blue; 
+}
+.flex-container-page{
+  display: flex;
+  height: 100%;
+  width: 100%
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0px;
+  background-color: #1d3a68;
+}
+.flex-container {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  margin: 0;
+  flex-wrap : wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #1d3a68;
+}
+
+.flex-container > div {
+  background-color: #3e74c9;
+  height: 25%;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin: 20px 10px 20px 20px;
+  border-radius: 25px;
+  flex-shrink: 0; 
+  overflow:hidden;
+  flex-basis:15%;
+  opacity: 0.8;
+  transition: all 1s ease-in;
+}
+
+#first:hover ~ div{
+  opacity: 0;
+  transform: translateY(-200px) scale(0.1);
+  transition: all 1s;
+}
+
+#second:hover ~ div{
+  opacity: 0;
+  transform: translateY(-200px) scale(0.1);
+  transition: all 1s;
+}
+
+#fourth:hover ~ div {
+  opacity: 0;
+  transform: translateY(-200px) scale(0.1);
+  transition: all 1s;
+}
+#third:hover ~ div{
+  opacity: 0;
+  transform: translateY(-200px) scale(0.1);
+  transition: all 1s;
+}
+
+.flex-container > div:hover#first {
+    transform: translateX(380px) scale(1.5);
+    transition: all 1s ease-in-out;
+}
+
+.flex-container > div:hover#second  {
+    transform: translateX(100px) scale(1.5);
+    transition: all 1s ease-in-out;
+}
+.flex-container > div:hover#third {
+    transform: translateX(100px) scale(1.5);
+    transition: all 1s ease-in-out;
+}
+.flex-container > div:hover#fourth {
+    transform: translateX(100px) scale(1.5);
+    transition: all 1s ease-in-out;
+}
+
+.flex-container > div:hover#fifth {
+    transform: translateX(-300px) translateY(200px)scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+a:visited {
+    color: #1d3a68;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: blue;
+}
+img {
+    height: auto;
+    width: auto;
+    max-height: 20px;
+    max-width: 20px;
+}
+span {
+  margin-left:10px; 
+  margin-right:10px;
+}
