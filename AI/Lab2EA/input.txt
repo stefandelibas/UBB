@@ -1,0 +1,6 @@
+xmin=-10
+xmax=10
+ymin=-10
+ymax=10
+population dimension=100
+mutation probability=0.02

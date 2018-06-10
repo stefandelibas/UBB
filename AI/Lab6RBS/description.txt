@@ -1,0 +1,28 @@
+Problem:
+	Consider a system to control a sprinkler.
+	The purpose of this system is to adjust the operating time of the sprinkler (short, medium, long).
+	The outside sensors give information about the air temperature(very cold,cold,normal,warm,hot)
+	and the humidity of the soil(dry,normal,wet).
+	Compute the necessary operating time of the sprinkler according to the input data
+
+Input:
+	Temperature:
+		very cold
+		cold
+		normal
+		warm
+		hot
+	Humidity:
+		dry
+		normal 
+		wet
+	
+Output:
+	Time of the sprinkle:
+		short
+		medium
+		long
+		
+Algorithm:
+	Mamdami model
+	Defuzzification: Largest of maximum
