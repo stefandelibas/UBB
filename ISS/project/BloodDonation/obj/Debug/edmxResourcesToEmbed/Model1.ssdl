@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BloodDonationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Blood Donations">
+    <Key>
+      <PropertyRef Name="idDonation" />
+    </Key>
+    <Property Name="idDonation" Type="int" Nullable="false" />
+    <Property Name="bloodGroup" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isApproved" Type="bit" Nullable="false" />
+    <Property Name="donationDate" Type="date" Nullable="false" />
+    <Property Name="expiratonDate" Type="date" Nullable="false" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDonor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPatient" Type="int" Nullable="false" />
+    <Property Name="componentName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Blood Tests">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="disease" Type="varchar" MaxLength="50" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDonation" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Distances">
+    <Key>
+      <PropertyRef Name="idLocation1" />
+      <PropertyRef Name="idLocation2" />
+    </Key>
+    <Property Name="distance" Type="int" Nullable="false" />
+    <Property Name="idLocation1" Type="int" Nullable="false" />
+    <Property Name="idLocation2" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Doctors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idHospital" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Donation Centers">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDlocation" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Donors">
+    <Key>
+      <PropertyRef Name="idPerson" />
+    </Key>
+    <Property Name="idPerson" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Hospitals">
+    <Key>
+      <PropertyRef Name="idHospital" />
+    </Key>
+    <Property Name="idHospital" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="idCity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Locations">
+    <Key>
+      <PropertyRef Name="idCity" />
+    </Key>
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="idCity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="idMessage" />
+    </Key>
+    <Property Name="idMessage" Type="int" Nullable="false" />
+    <Property Name="msg" Type="varchar" MaxLength="200" />
+    <Property Name="idPerson" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patients">
+    <Key>
+      <PropertyRef Name="idPatient" />
+    </Key>
+    <Property Name="idPatient" Type="int" Nullable="false" />
+    <Property Name="bloodNeeded" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="bloodGroup" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDoctor" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="surname" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="gender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="phoneNr" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="birthdate" Type="date" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="bloodGroup" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="idCity" Type="int" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="actualAddress" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="idActualCity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Requests">
+    <Key>
+      <PropertyRef Name="idRequest" />
+    </Key>
+    <Property Name="idRequest" Type="int" Nullable="false" />
+    <Property Name="req_date" Type="date" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="severity_level" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPatient" Type="int" Nullable="false" />
+    <Property Name="idDoctor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stocks">
+    <Key>
+      <PropertyRef Name="idDonation" />
+    </Key>
+    <Property Name="idDonation" Type="int" Nullable="false" />
+    <Property Name="idDonationCenter" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="bloodGroup" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="donationDate" Type="date" Nullable="false" />
+    <Property Name="expirationDate" Type="date" Nullable="false" />
+    <Property Name="idPatient" Type="int" />
+    <Property Name="componentName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Blood Donations_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Blood Donations" Type="Self.Blood Donations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Blood Donations">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blood Donations_Donors">
+    <End Role="Donors" Type="Self.Donors" Multiplicity="1" />
+    <End Role="Blood Donations" Type="Self.Blood Donations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donors">
+        <PropertyRef Name="idPerson" />
+      </Principal>
+      <Dependent Role="Blood Donations">
+        <PropertyRef Name="idDonor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blood Donations_Patients">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Blood Donations" Type="Self.Blood Donations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="idPatient" />
+      </Principal>
+      <Dependent Role="Blood Donations">
+        <PropertyRef Name="idPatient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blood Tests_Blood Donations">
+    <End Role="Blood Donations" Type="Self.Blood Donations" Multiplicity="1" />
+    <End Role="Blood Tests" Type="Self.Blood Tests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blood Donations">
+        <PropertyRef Name="idDonation" />
+      </Principal>
+      <Dependent Role="Blood Tests">
+        <PropertyRef Name="idDonation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blood Tests_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Blood Tests" Type="Self.Blood Tests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Blood Tests">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Distances_Locations">
+    <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
+    <End Role="Distances" Type="Self.Distances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="idCity" />
+      </Principal>
+      <Dependent Role="Distances">
+        <PropertyRef Name="idLocation1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Distances_Locations1">
+    <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
+    <End Role="Distances" Type="Self.Distances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="idCity" />
+      </Principal>
+      <Dependent Role="Distances">
+        <PropertyRef Name="idLocation2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doctor_Person">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1" />
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Doctors">
+        <PropertyRef Name="id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Doctors_Hospitals">
+    <End Role="Hospitals" Type="Self.Hospitals" Multiplicity="1" />
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hospitals">
+        <PropertyRef Name="idHospital" />
+      </Principal>
+      <Dependent Role="Doctors">
+        <PropertyRef Name="idHospital" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Donation Centers_Locations">
+    <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="idCity" />
+      </Principal>
+      <Dependent Role="Donation Centers">
+        <PropertyRef Name="IDlocation" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Donors_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Donors" Type="Self.Donors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Donors">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Donors_Messages">
+    <End Role="Donors" Type="Self.Donors" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donors">
+        <PropertyRef Name="idPerson" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idPerson" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Donors_Persons">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1" />
+    <End Role="Donors" Type="Self.Donors" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Donors">
+        <PropertyRef Name="idPerson" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Hospitals_Locations">
+    <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
+    <End Role="Hospitals" Type="Self.Hospitals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="idCity" />
+      </Principal>
+      <Dependent Role="Hospitals">
+        <PropertyRef Name="idCity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Patient_Patient">
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+    <End Role="Patients" Type="Self.Patients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Patients">
+        <PropertyRef Name="idDoctor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persons_Locations">
+    <End Role="Locations" Type="Self.Locations" Multiplicity="1" />
+    <End Role="Persons" Type="Self.Persons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Locations">
+        <PropertyRef Name="idCity" />
+      </Principal>
+      <Dependent Role="Persons">
+        <PropertyRef Name="idCity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_Doctors">
+    <End Role="Doctors" Type="Self.Doctors" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Doctors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="idDoctor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Requests_Patients">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="1" />
+    <End Role="Requests" Type="Self.Requests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="idPatient" />
+      </Principal>
+      <Dependent Role="Requests">
+        <PropertyRef Name="idPatient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stocks_Donation Centers">
+    <End Role="Donation Centers" Type="Self.Donation Centers" Multiplicity="1" />
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Donation Centers">
+        <PropertyRef Name="email" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="idDonationCenter" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stocks_Patients">
+    <End Role="Patients" Type="Self.Patients" Multiplicity="0..1" />
+    <End Role="Stocks" Type="Self.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Patients">
+        <PropertyRef Name="idPatient" />
+      </Principal>
+      <Dependent Role="Stocks">
+        <PropertyRef Name="idPatient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BloodDonationModelStoreContainer">
+    <EntitySet Name="Blood Donations" EntityType="Self.Blood Donations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Blood Tests" EntityType="Self.Blood Tests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Distances" EntityType="Self.Distances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctors" EntityType="Self.Doctors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Donation Centers" EntityType="Self.Donation Centers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Donors" EntityType="Self.Donors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hospitals" EntityType="Self.Hospitals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Locations" EntityType="Self.Locations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patients" EntityType="Self.Patients" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persons" EntityType="Self.Persons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Requests" EntityType="Self.Requests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stocks" EntityType="Self.Stocks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Blood Donations_Donation Centers" Association="Self.FK_Blood Donations_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Blood Donations" EntitySet="Blood Donations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blood Donations_Donors" Association="Self.FK_Blood Donations_Donors">
+      <End Role="Donors" EntitySet="Donors" />
+      <End Role="Blood Donations" EntitySet="Blood Donations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blood Donations_Patients" Association="Self.FK_Blood Donations_Patients">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Blood Donations" EntitySet="Blood Donations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blood Tests_Blood Donations" Association="Self.FK_Blood Tests_Blood Donations">
+      <End Role="Blood Donations" EntitySet="Blood Donations" />
+      <End Role="Blood Tests" EntitySet="Blood Tests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blood Tests_Donation Centers" Association="Self.FK_Blood Tests_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Blood Tests" EntitySet="Blood Tests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Distances_Locations" Association="Self.FK_Distances_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Distances" EntitySet="Distances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Distances_Locations1" Association="Self.FK_Distances_Locations1">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Distances" EntitySet="Distances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doctor_Person" Association="Self.FK_Doctor_Person">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="Doctors" EntitySet="Doctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Doctors_Hospitals" Association="Self.FK_Doctors_Hospitals">
+      <End Role="Hospitals" EntitySet="Hospitals" />
+      <End Role="Doctors" EntitySet="Doctors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Donation Centers_Locations" Association="Self.FK_Donation Centers_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Donors_Donation Centers" Association="Self.FK_Donors_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Donors" EntitySet="Donors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Donors_Messages" Association="Self.FK_Donors_Messages">
+      <End Role="Donors" EntitySet="Donors" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Donors_Persons" Association="Self.FK_Donors_Persons">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="Donors" EntitySet="Donors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Hospitals_Locations" Association="Self.FK_Hospitals_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Hospitals" EntitySet="Hospitals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_Donation Centers" Association="Self.FK_Messages_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Patient_Patient" Association="Self.FK_Patient_Patient">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="Patients" EntitySet="Patients" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persons_Locations" Association="Self.FK_Persons_Locations">
+      <End Role="Locations" EntitySet="Locations" />
+      <End Role="Persons" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_Doctors" Association="Self.FK_Requests_Doctors">
+      <End Role="Doctors" EntitySet="Doctors" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_Donation Centers" Association="Self.FK_Requests_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Requests_Patients" Association="Self.FK_Requests_Patients">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Requests" EntitySet="Requests" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stocks_Donation Centers" Association="Self.FK_Stocks_Donation Centers">
+      <End Role="Donation Centers" EntitySet="Donation Centers" />
+      <End Role="Stocks" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stocks_Patients" Association="Self.FK_Stocks_Patients">
+      <End Role="Patients" EntitySet="Patients" />
+      <End Role="Stocks" EntitySet="Stocks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

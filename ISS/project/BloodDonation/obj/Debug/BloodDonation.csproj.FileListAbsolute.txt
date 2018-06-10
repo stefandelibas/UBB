@@ -1,0 +1,62 @@
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Properties.Resources.resources
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.GenerateResource.cache
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe.config
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\EntityFramework.dll
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\EntityFramework.xml
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CopyComplete
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.exe
+C:\Users\Stefan-PC\source\repos\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe.config
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\EntityFramework.dll
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.dll
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\EntityFramework.xml
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.xml
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Properties.Resources.resources
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.GenerateResource.cache
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CopyComplete
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.exe
+D:\Computer Science\Semester 4\Ingineria sistemelor soft\The-Hateful-Eight\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe.config
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\BloodDonation.exe
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\BloodDonation.pdb
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\EntityFramework.dll
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\EntityFramework.xml
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Properties.Resources.resources
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.GenerateResource.Cache
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.exe
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.pdb
+C:\Users\Diana\Desktop\The-Hateful-Eight-master\BloodDonation\BloodDonation\obj\Debug\BloodDonation.Form1.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\BloodDonation.exe.config
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\BloodDonation.exe
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\BloodDonation.pdb
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\EntityFramework.dll
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\EntityFramework.xml
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.csprojResolveAssemblyReference.cache
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.Form1.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.Properties.Resources.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.csproj.GenerateResource.cache
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.csproj.CoreCompileInputs.cache
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.csproj.CopyComplete
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.exe
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.pdb
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.DCPCenter.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.DoctorUi.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.DonorUi.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.PersonalData.resources
+C:\Users\Stefan-PC\Documents\ubb\anul II\semestrul 2\ISS\project\BloodDonation\obj\Debug\BloodDonation.AdminUi.resources

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="00251ff806204feb843fc644482c0b3e" Name="Diagram1">
+        <EntityTypeShape EntityType="BloodDonationModel.Blood_Donation" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Blood_Test" Width="1.5" PointX="10.5" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Distance" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Doctor" Width="1.5" PointX="5.25" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Donation_Center" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Donor" Width="1.5" PointX="5.25" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Hospital" Width="1.5" PointX="3" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Location" Width="1.5" PointX="0.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Message" Width="1.5" PointX="7.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Patient" Width="1.5" PointX="7.5" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Person" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Request" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.Stock" Width="1.5" PointX="8.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BloodDonationModel.sysdiagram" Width="3" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BloodDonationModel.FK_Blood_Donations_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Blood_Donations_Donors" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Blood_Donations_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Blood_Tests_Blood_Donations" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Blood_Tests_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Distances_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Distances_Locations1" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Doctor_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Doctors_Hospitals" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Patient_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Requests_Doctors" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Donation_Centers_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Donors_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Messages_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Requests_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Stocks_Donation_Centers" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Donors_Messages" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Donors_Persons" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Hospitals_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Persons_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Requests_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="BloodDonationModel.FK_Stocks_Patients" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

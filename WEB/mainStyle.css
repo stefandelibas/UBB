@@ -32,13 +32,7 @@ footer {
   flex-shrink: 0;
 
 }
-.col-sm-2{
-  background-color: cyan;
-  
-}
-.col-sm-8{
-  background-color: blue; 
-}
+
 .flex-container-page{
   display: flex;
   height: 100%;
