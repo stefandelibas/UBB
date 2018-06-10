@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewBag.Title = "BookRoom";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stefan Hotels</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+            background-color: #0f1626;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+            background-color: #ff533d;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #0f1626;
+            color: white;
+            padding: 25px;
+        }
+
+        #logo {
+            color: #ff533d;
+            font: 400 16px/1.5 'Pacifico', Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: #ff533d;
+            font: 400 16px/1.5 'Pacifico', Helvetica, sans-serif;
+        }
+
+        .filter {
+            margin-bottom: 5px;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Stefan Hotels</h1>
+            <p>Live is Luxury</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="logo" href="#">Stefan Hotels</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/Rooms/Rooms">Home</a></li>
+                    <li><a href="/Rooms/Rooms">Book a room</a></li>
+                    <li><a href="/Bookings/Bookings"><span class="glyphicon glyphicon-user"></span>Your Bookings</a></li>
+                    <li><a href="/Prices/Prices">On your budget</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 filter">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="panel panel-primary r1">
+                    <div class="panel-heading r1"></div>
+                    <div class="panel-body r1"></div>
+                    <div class="panel-footer r1">
+                        <div>
+                            <p>Select your dates:</p>
+                            <input type="text" id="rid" name="rid" value='0'>
+                            Start Date:
+                            <input type="date" id="start" name="startDate">
+                            End Date:
+                            <input type="date" id="end" name="endDate">
+                            <button name="submit" type="submit" value="Submit">Book</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+          <footer class="container-fluid text-center">
+              <p>made by &copy;Stefan Delibas </p>
+              <input type="hidden" value="@Session["id"]" id="myHiddenVar" />
+          </footer>
+
+
+    <script type="text/javascript">
+        
+        
+  $(document).ready(function(){
+      if ($("#myHiddenVar").val() == "") {
+          var url = "/Login/Login";
+          $(location).attr('href', url);
+      }
+    var urlParams = new URLSearchParams(window.location.search);
+    $.get("/BookRoom/GetRoom", {id : urlParams.get('id') }, function(result){
+
+    $(".panel-heading.r1").html('Hotel '+result[0]["Hotel"]+ ' - ' +result[0]["Type"]+' room ');
+    $(".panel-primary.r1").attr('id', result[0]["IDRoom"]);
+    $(".panel-body.r1").html('Price:'+result[0]["Price"]+' '+
+                                'Category:'+result[0]["Category"]
+                              );
+                        });
+    $('.myButton').hide();
+    $('#end').blur(function () {
+                            if($('#end').not(":empty")){
+                                if ($('#start').not(":empty")) {
+         $('.myButton').show();
+                                }
+                            }
+                        });
+    $('#rid').hide();
+    $('#rid').attr('value',urlParams.get('IDRoom'));
+
+
+
+
+      $('button').on('click', function (event) {
+          var x = $('#myHiddenVar').val();
+          var data =
+              {
+                  cid: x,
+                  rid: urlParams.get('id'),
+                  startDate: $('#start').val(),
+                  endDate: $('#end').val()
+              };
+          $.post("/BookRoom/SaveBooking", data, function (result) {
+              if (result == undefined || result == null || result.length == 0 || result[0] != "success") {
+                  var url = "/Rooms/Rooms";
+                  $(location).attr('href', url);
+              }
+              else
+                  alert(result[0]);
+          });
+
+      });
+
+    });
+    </script>
+</body>
+</html>

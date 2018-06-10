@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+    <form method="post" action="/Login/EnterApplication">
+        <div id="container">
+            <h1>Please login to continue!</h1>
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username" />
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password" />
+            </p>
+            <p>
+                <input type="submit" name="login" value="Login" id="loginButton" />
+            </p>
+        </div>
+    </form>
+</body>
+</html>
+
+
+

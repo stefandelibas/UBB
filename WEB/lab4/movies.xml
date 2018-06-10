@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="movies.xsl"?>
+<movies>
+  <movie>
+    <title>Ready Player One</title>
+    <actors>
+      <actor>Tye Sheridan</actor>
+      <actor>Olivia Cooke</actor>
+      <actor>Ben Mendelsohn</actor>
+      <actor>Lena Waithe</actor>
+    </actors>
+    <genre>Action</genre>
+    <date-of-playing>12.05.2018</date-of-playing>
+    <duration>140</duration>
+  </movie>
+  <movie>
+    <title>Tyler Perry's Acrimony</title>
+    <actors>
+      <actor>Taraji P. Henson</actor>
+      <actor>Lyriq Bent</actor>
+      <actor>Crystle Stewart</actor>
+      <actor>Jazmyn Simon</actor>
+    </actors>
+    <genre>Thriller</genre>
+    <date-of-playing>13.05.2018</date-of-playing>
+    <duration>120</duration>
+  </movie>
+  <movie>
+    <title>God's Not Dead: A Light in Darkness</title>
+    <actors>
+      <actor>David A.R. White</actor>
+      <actor>John Corbett</actor>
+      <actor>Shane Harper</actor>
+      <actor>Ted McGinley</actor>
+    </actors>
+    <genre>Drama</genre>
+    <date-of-playing>11.05.2018</date-of-playing>
+    <duration>120</duration>
+  </movie>
+  <movie>
+    <title>Finding Your Feet</title>
+    <actors>
+      <actor>Timothy Spall</actor>
+      <actor>Joanna Lumley</actor>
+      <actor>Imelda Staunton</actor>
+      <actor>Celia Imrie</actor>
+    </actors>
+    <genre>Comedy</genre>
+    <date-of-playing>10.05.2018</date-of-playing>
+    <duration>111</duration>
+  </movie>   
+  <movie>
+    <title>Birthmarked</title>
+    <actor>Matthew Goode</actor>
+    <actor>Toni Collette</actor>
+    <actor>Fionnula Flanagan</actor>
+    <actor>Michael Smiley</actor>
+    <genre>Comedy</genre>
+    <date-of-playing>10.05.2018</date-of-playing>
+    <duration>90</duration>
+  </movie>
+  <movie>
+    <title>Outside In</title>
+    <actors>
+      <actor>Edie Falco</actor>
+      <actor>Jay Duplass</actor>
+      <actor>Kaitlyn Dever</actor>
+      <actor>Ben Schwartz</actor>
+    </actors>
+    <genre>Drama</genre>
+    <date-of-playing>15.05.2018</date-of-playing>
+    <duration>109</duration>
+  </movie>
+</movies>

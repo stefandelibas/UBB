@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body{
+    height: 100%;
+}
+div.frame {
+    width: 50%;
+    height: 50%;    
+}
+div.box {
+    width: 100%;
+    height: 100%;
+    background-color: blue;    
+}
+.frame{
+  float: right
+}
+.box {
+  background: blue;  
+  position: relative;
+}
+
+.box:hover {
+  /*animation-name: godown;*/
+  animation: godown 8s linear;
+  /*animation-duration: 8s;*/
+}
+
+@keyframes godown {
+    0%   {background-color:blue; left:0px; top:0px;}
+    50% {background-color:red; left:0px; top:400px;}
+    100% {background-color:blue; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<div class="frame"><div class="box"></div></div>
+
+</body>
+</html>

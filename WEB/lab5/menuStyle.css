@@ -1,0 +1,36 @@
+html, body{
+	height:100%;
+	width:100%;
+}
+.menu{
+	background-color: white;
+	width: 350px;
+	height: 500px;
+}
+.menuItems{
+	background-color: white;
+	float: left;
+	width: 50%;
+	height: 500px;
+}
+#side{
+	background-color: white;
+	width: 50%;
+	height: 500px;
+	float: right;
+}
+
+.menuItem {
+	padding: 3px;
+	margin:4px;
+	width: 120px;
+    padding: 10px 20px;
+  	border: 6px solid #018dc4;
+  	border-radius: 6px;
+  	font: normal normal bold 22px/normal "Comic Sans MS", cursive, sans-serif;
+  	color: rgba(255,255,255,0.9);
+  	background: #0199d9;
+  	-webkit-box-shadow: 5px 5px 7px 0 rgba(0,0,0,0.2) ;
+}
+
+

@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Routes:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Routes_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Routes/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Routes" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql-connector-java-5.1.46" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.11" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,233 @@
+html, body{
+     height: 100%;
+     margin: 0;
+     background-color: #e8e8e8;
+}
+
+.flex-container-top{
+  background-color: white;
+  position: fixed;
+  display: flex;
+  height: 8%;
+  width: 100%;
+  padding-top: 10px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container-icons{
+  margin-left: 120px;
+  background-color: white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+.flex-container-menu{
+  background-color: white;
+  display: flex;
+  height: auto;
+  width: auto;
+  justify-content: space-around;
+  align-items:center;
+  flex-flow: row wrap;
+}
+
+.sidePanel {
+  background-color: white;
+  height: auto;
+  width: 20%;
+  text-align: left;
+  padding: 15px;
+  margin-right: 15.5%;
+  float: right;
+  border-top:8px solid #d834ac;
+  border-radius: 8px;
+}
+
+.mainPanel {
+  background-color: #3e74c9;
+  height: 100%;
+  width: 45%;
+  margin-left: 16%;
+  background-color: #e8e8e8;
+  float:left;
+}
+
+.imgWtitle{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 0px 0px 10px 0px;
+}
+
+.imgWtitle h1{
+  font-family: Varela Round;
+  color:black;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+}
+.sm-card{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+}
+.sm-card h1{
+  font-family: Varela Round;
+  color:black;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 15px 2px 5px 15px;
+}
+
+.sm-card h2{
+  font-family: "Times New Roman", Times, sans-serif;
+  color:black;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 2px 2px 5px 15px;
+}
+
+.lg-card{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding-bottom: 15px;
+  margin: 0px 0px 10px 0px;
+}
+.lg-card h1{
+  font-family: Caponi-Slab-Semibold,Proxima Nova,Helvetica,Arial,sans-serif;
+  color:black;
+  font-size: 34px;
+  margin: 15px 2px 5px 15px;
+}
+
+.lg-card h2{
+  color:black;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight:normal;
+  margin: 2px 2px 5px 15px;
+}
+
+
+
+.note{
+  font-family: Varela Round;
+  margin: 15px 2px 5px 15px;
+  color:grey;
+  font-size: 16px;
+}
+
+.big-img {
+    margin-bottom: : 10px;
+    height: auto;
+    width: 100%;
+}
+.small-img{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+.icon-img{
+  width: 58px;
+  height: 58px; 
+}
+.round-avatar{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+a:visited {
+    color: #1d3a68;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: blue;
+}
+.imgSlider{
+  background-color: white;
+  height: 20%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.flex-container-menu > h1 {
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color:#EF4030;
+  margin:0px 0px 0px 10px;
+}
+.flex-container-menu > h2{
+  font-family: Arial,sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 16px;
+  color:blue;
+  margin:0px 0px 0px 20px;
+}
+.slider {
+    margin-top: 4.5%;
+    max-height: 55%;    
+    min-height: 55%;
+    max-width: 8%;
+    min-width: 8%;
+}
+
+span {
+  margin-left:10px; 
+  margin-right:10px;
+}
+svg{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+input{
+  margin-left: 10px;
+  padding: 5px;
+}
+article{
+  line-height: 25px;
+}
+.time p::before {
+    content: "•";
+}
+.buttonSlider{
+    position: absolute;
+    height: 50px;
+    width: 75px;
+    top: 80px;
+    right: 0;
+    float: right;
+    color:white;
+    text-align: center;
+    display: inline-block;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #d834ac;
+    opacity: 0.8;
+}
+#sageata{
+  color:white;
+  position: absolute;
+  font-size: 20px;
+  width: 0px;
+  top: 72 px;
+  right: 50px;
+  z-index: 1;
+  font-weight: bold;
+}
