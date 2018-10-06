@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stefan</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+
+        body{
+        background-image:url('summer.jpg');
+        }
+
+        .Image{
+        position:absolute;
+        width:50%;
+        height:750px;
+        margin:0;
+        }
+
+        .Image img{
+        width:100%;
+        height:100%;
+        -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 80% 0%, 30% 100%, 0% 100%, 0% 86%, 0% 20%);
+        animation: polygons 5s infinite;
+        animation-play-state: paused; 
+        }
+        
+        img:hover
+        {
+            animation-play-state: running;
+        }
+        @keyframes polygons {
+            25% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 80% 0%, 30% 100%, 0% 100%, 0% 86%, 0% 20%);
+            background: pink;
+            }
+            50% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 50%, 50% 100%, 0% 100%, 0% 86%, 0% 20%);
+            background: orange;
+            }
+            75% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 100%, 0% 100%);
+            background: cornflowerblue;
+            }
+            }
+
+        .blackBg{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.6);
+        }
+        </style>
+    </head>
+    <body>
+
+   <div class="blackBg"></div>
+
+<div class="Image">
+  <img src="winter.png">
+</div>
+
+
+
+    <script type="text/javascript">
+
+    </script>
+    </body>
+</html>

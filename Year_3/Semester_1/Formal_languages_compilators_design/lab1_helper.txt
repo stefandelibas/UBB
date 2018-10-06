@@ -1,0 +1,38 @@
+repetition { }
+grouping ()
+optional []
+
+
+
+example:
+
+<program> ::= "HELLO" <decl> "END"
+<decl> ::= <read>|<write>
+<read> ::= "R"<id>
+<write> ::= "w"<id>
+<id> ::= "a"|"b"
+
+ operators + -
+	 - separators space
+	 - reserved words:
+	    	HELLO END R W
+      b.identifiers
+	   -a sequence of letters and  digits, such that the first charater is a letter; the rule is:
+	     identifier ::= letter 
+	     letter ::= "a" | "b" 
+	     digit ::= "0" | "1" |...| "9"
+
+
+code:
+
+HELLO
+R a
+END
+
+
+
+
+lab assignment
+1 - a
+2 - b
+3 - c
