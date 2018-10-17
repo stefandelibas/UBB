@@ -1,0 +1,7 @@
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\bin\Debug\Lab1_02.exe.config
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\bin\Debug\Lab1_02.exe
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\bin\Debug\Lab1_02.pdb
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\obj\Debug\Lab1_02.csprojResolveAssemblyReference.cache
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\obj\Debug\Lab1_02.csproj.CoreCompileInputs.cache
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\obj\Debug\Lab1_02.exe
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab1_02\Lab1_02\obj\Debug\Lab1_02.pdb

@@ -2,7 +2,7 @@
 
 #include <string>
 #include <vector>
-#include <pair>
+#include <map>
 
 #ifndef INTERFACES_INCLUDED
 #define INTERFACES_INCLUDED
@@ -13,12 +13,12 @@ namespace product {
 	{
 		std::string										m_productName;
 		const double									m_price;
-		int												m_quantity;
 	};
 
 	struct Bill
 	{
-		std::vector<std::pair<product::Product&,int>>	m_products;
+		int												m_id;
+		std::map<product::Product&,int>					m_products;
 		double											m_totalPrice;
 	};
 }

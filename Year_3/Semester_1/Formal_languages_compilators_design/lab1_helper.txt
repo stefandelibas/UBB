@@ -27,7 +27,33 @@ code:
 
 HELLO
 R a
+R a
+R b
 END
+symbol table constants(ST_C):
+name	|	position
+-------------------------
+3	|	0
+
+symbol table(ST):
+name	|	position
+-------------------------
+a	|	0
+b	|	1
+
+Program Internal Form(PIF):
+code		|	postion in ST(-1 for non-identifiers)
+-------------------------------------------------------
+12		|	"Hello"
+...		|	...
+10		|	0
+10		|	0
+10		|	1
+11		|	0
+
+3a => eroare lexicala
+
+
 
 
 
