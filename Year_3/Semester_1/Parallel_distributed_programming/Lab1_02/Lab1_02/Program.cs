@@ -12,8 +12,8 @@ namespace Lab1_02
     {
         public static int NR_INPUT_PRODUCTS_STOCK = 500;
         public static int NR_INPUT_PRODUCTS_BILL = 5;
-        public static int MAX_SALES_PER_THREAD = 10000;
-        public static int NR_THREADS = 2;
+        public static int MAX_SALES_PER_THREAD = 100000;
+        public static int NR_THREADS = 8;
         public static int INITIAL_STOCK = 100000000;
         public readonly static Dictionary<int, Product> ProductsType = new Dictionary<int, Product>()
         {
@@ -116,12 +116,11 @@ namespace Lab1_02
                 //int noSales = random.Next(2, MAX_SALES_PER_THREAD);
                 int noSales = MAX_SALES_PER_THREAD / NR_THREADS;
                 Bill bill;
-                Thread.Sleep(10);
+
+                Thread.Sleep(noSales / 10);
                 for (int i = 0; i < noSales; i++)
                 {
-                    
                     //create a new bill
-
                     int id = GetNextID();
                     lock (bills)
                     {
