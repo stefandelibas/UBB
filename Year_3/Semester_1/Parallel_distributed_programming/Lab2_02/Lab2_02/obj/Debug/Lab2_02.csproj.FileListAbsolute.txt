@@ -1,0 +1,6 @@
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\bin\Debug\Lab2_02.exe.config
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\bin\Debug\Lab2_02.exe
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\bin\Debug\Lab2_02.pdb
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\obj\Debug\Lab2_02.csproj.CoreCompileInputs.cache
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\obj\Debug\Lab2_02.exe
+C:\Users\Stefan-PC\Documents\GitHub\UBB\Year_3\Semester_1\Parallel_distributed_programming\Lab2_02\Lab2_02\obj\Debug\Lab2_02.pdb
