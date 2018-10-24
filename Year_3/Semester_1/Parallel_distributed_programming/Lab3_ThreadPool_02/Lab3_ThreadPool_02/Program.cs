@@ -11,8 +11,8 @@ namespace Lab3_ThreadPool_02
 
     class Program
     {
-        static int rows = 160;
-        static int columns = 160;
+        static int rows = 1600;
+        static int columns = 1600;
         static int[] temp = new int[rows * columns];
         static int[,] matrixA = new int[rows, columns];
 

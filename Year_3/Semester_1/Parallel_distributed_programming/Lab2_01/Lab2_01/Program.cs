@@ -11,9 +11,9 @@ namespace Lab2_01
 
     class Program
     {
-        static int nrThreads = 4;
-        static int rows = 1600;
-        static int columns = 1600;
+        static int nrThreads = 1;
+        static int rows = 4;
+        static int columns = 4;
         static int[] temp = new int[rows * columns];
         static int[,] matrixA = new int[rows, columns];
        
@@ -126,7 +126,7 @@ namespace Lab2_01
             MultiplyMatrices();
             sw.Stop();
             
-            //PrintMatrix(result);
+            PrintMatrix(result);
             Console.WriteLine("Elapsed={0}", sw.ElapsedMilliseconds);
             Console.ReadKey();
         }
