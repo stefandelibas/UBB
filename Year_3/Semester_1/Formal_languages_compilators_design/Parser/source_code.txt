@@ -1,0 +1,6 @@
+program
+var ij , ji : integer;
+begin
+i := 5;
+end
+endprogram
